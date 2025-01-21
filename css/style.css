@@ -1,0 +1,189 @@
+@font-face {
+    font-family: Fraunces Italic Variable;
+    src: url(../typography/Fraunces\ Italic\ Variable\ Font.woff2);
+    font-weight: 300;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: Roboto Mono;
+    src: url(../typography/RobotoMono-Regular.woff2) format('woff2');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+html{
+    /* design system colors for the website*/
+    --background-color: #F5F4F1;
+    --box-color: #FFEDD5;
+    --stroke-color: #CE9177;
+    --heading-color: #9A3413;
+    --pararaph-color: #838387;
+    --occasion-top-color: #414843;
+    --mood-brand-color: #405D7D;
+    --weather-link-color: #991B1B;
+    --spotify-li-color: #854D0F;
+    --pinterest-li-color: #6B21A8;
+    --portfolio-li-color: #991B1B;
+}
+
+* {
+    box-sizing: border-box;
+   }
+
+body {
+    background-color: var(--background-color);
+}
+
+h1{
+    font-family: Fraunces Italic Variable, 'Times New Roman', Times, serif;
+    font-weight: 300;
+    font-size: 2.25rem;
+    color: var(--heading-color);
+    margin: 0;
+}
+
+h2{
+    font-family: Fraunces Italic Variable, 'Times New Roman', Times, serif;
+    font-weight: 300;
+    font-size: 1rem;
+    color: var(--heading-color);
+}
+
+p{
+    font-family: Roboto Mono, 'Courier New', Courier, monospace;
+    font-weight: 300;
+    font-size: .8125rem;
+    line-height: 20px;
+    color: var(--pararaph-color);
+}
+
+:root {
+    --pp-top-16: 16px;
+    --p-bottom-16: 16px;
+    --p-bottom-24: 24px;
+    --h1-bottom-8: 8px;
+    --h1-bottom-16-top-36: 36px;
+    --h1-bottom-16-top-24: 24px;
+    --img-bottom-36: 36px;
+    --box-bottom-8: 8px;
+    --box-bottom-36: 36px;
+    --menu-top-24: 24px;
+}
+
+/*custom spacing throughout the CSS */
+.p-bottom-24-top-16 {
+    margin-bottom: var(--p-bottom-24);
+    margin-top: var(--pp-top-16);
+}
+
+.h1-bottom-16-top-36 {
+    margin-bottom: var(--p-bottom-16);
+    margin-top: var(--h1-bottom-16-top-36);
+}
+
+.h1-bottom-8 {
+    margin-bottom: var(--h1-bottom-8);
+}
+
+.h1-bottom-16-top-24 {
+    margin-bottom: var(--p-bottom-16);
+    margin-top: var(--h1-bottom-16-top-24);
+}
+
+.img-bottom-36 {
+    margin-bottom: var(--img-bottom-36);
+}
+
+.box-bottom-8 {
+    /* might not need */
+    margin-bottom: var(--box-bottom-8);
+}
+
+.box-bottom-36 {
+    /* might not need */
+    margin-bottom: var(--box-bottom-36);
+}
+
+.menu-top-24 {
+    margin-top: var(--menu-top-24);
+}
+
+.header {
+    /* this css styling ensures that my header is aligned properly. 
+    such as, logo on the left and menu on the right side of the page */
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 22px 0 0 0;
+}
+
+.logo{
+    width: 43px;
+    height: 46px;
+}
+
+hr{
+    border-top: 2px dotted var(--pararaph-color);
+}
+
+.custom-list {
+    list-style: none; /* removes bullet points */
+    padding: 0; /* removes default padding */
+    margin: 0;
+    font-family: Roboto Mono, 'Courier New', Courier, monospace;
+    font-weight: 400;
+    font-size: 0.8125rem;
+    line-height: 20px;
+}
+
+.custom-list li {
+    margin: 5px 0; /* adds spacing between list items */
+}
+
+.custom-list a {
+    text-decoration: none; /* removes underline from links */
+}
+
+.custom-list a[href*="framer"] { color: var(--portfolio-li-color); } /* Portfolio */
+.custom-list a[href*="linkedin"] { color: var(--occasion-top-color); } /* LinkedIn */
+.custom-list a[href*="github"] { color: var(--mood-brand-color); } /* GitHub */
+.custom-list a[href*="spotify"] { color: var(--spotify-li-color); } /* Spotify */
+.custom-list a[href*="pin"] { color: var(--pinterest-li-color); } /* Pinterest */
+.custom-list a[href*="instagram"] { color: var(--heading-color); } /* Instagram */
+
+.detail-wrapper {
+    /* used for outfit details. "top, brand, linked" */
+    padding: 10px;
+    border: 2px dotted #CE9177;
+    border-radius: 8px;
+    width: 100%;
+    background-color: #FFEDD5;
+    margin-bottom: 8px;
+}
+
+.green {
+    /* used for categorizing occasion, mood, weather */
+    color: var(--occasion-top-color);
+}
+
+.blue {
+    /* used for categorizing occasion, mood, weather */
+    color: var(--mood-brand-color);
+}
+
+.red {
+    /* used for categorizing occasion, mood, weather */
+    color: var(--weather-link-color)
+}
+
+.tag {
+    /* used for bordering occasion, mood, weather */
+    display: inline-block;
+    padding: 4px 6px;
+    margin: 0;
+    border: 2px dotted #CE9177;
+    border-radius: 4px;
+}
