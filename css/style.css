@@ -15,7 +15,7 @@
 }
 
 html{
-    /* design system colors for the website*/
+    /* design system colors & spacing for the website*/
     --background-color: #F5F4F1;
     --box-color: #FFEDD5;
     --stroke-color: #CE9177;
@@ -27,6 +27,18 @@ html{
     --spotify-li-color: #854D0F;
     --pinterest-li-color: #6B21A8;
     --portfolio-li-color: #991B1B;
+
+    --pp-top-16: 16px;
+    --p-bottom-16: 16px;
+    --p-bottom-24: 24px;
+    --h1-bottom-8: 8px;
+    --h1-bottom-16-top-36: 36px;
+    --h1-bottom-16-top-24: 24px;
+    --h2--bottom-16-top-24: 24px;
+    --img-bottom-36: 36px;
+    --box-bottom-8: 8px;
+    --box-bottom-36: 36px;
+    --menu-top-24: 24px;
 }
 
 * {
@@ -42,7 +54,6 @@ h1{
     font-weight: 300;
     font-size: 2.25rem;
     color: var(--heading-color);
-    margin: 0;
 }
 
 h2{
@@ -50,6 +61,7 @@ h2{
     font-weight: 300;
     font-size: 1rem;
     color: var(--heading-color);
+    margin: 12px 0 8px 0;
 }
 
 p{
@@ -58,19 +70,6 @@ p{
     font-size: .8125rem;
     line-height: 20px;
     color: var(--pararaph-color);
-}
-
-:root {
-    --pp-top-16: 16px;
-    --p-bottom-16: 16px;
-    --p-bottom-24: 24px;
-    --h1-bottom-8: 8px;
-    --h1-bottom-16-top-36: 36px;
-    --h1-bottom-16-top-24: 24px;
-    --img-bottom-36: 36px;
-    --box-bottom-8: 8px;
-    --box-bottom-36: 36px;
-    --menu-top-24: 24px;
 }
 
 /*custom spacing throughout the CSS */
@@ -95,16 +94,6 @@ p{
 
 .img-bottom-36 {
     margin-bottom: var(--img-bottom-36);
-}
-
-.box-bottom-8 {
-    /* might not need */
-    margin-bottom: var(--box-bottom-8);
-}
-
-.box-bottom-36 {
-    /* might not need */
-    margin-bottom: var(--box-bottom-36);
 }
 
 .menu-top-24 {
@@ -147,12 +136,12 @@ hr{
     text-decoration: none; /* removes underline from links */
 }
 
-.custom-list a[href*="framer"] { color: var(--portfolio-li-color); } /* Portfolio */
-.custom-list a[href*="linkedin"] { color: var(--occasion-top-color); } /* LinkedIn */
-.custom-list a[href*="github"] { color: var(--mood-brand-color); } /* GitHub */
-.custom-list a[href*="spotify"] { color: var(--spotify-li-color); } /* Spotify */
-.custom-list a[href*="pin"] { color: var(--pinterest-li-color); } /* Pinterest */
-.custom-list a[href*="instagram"] { color: var(--heading-color); } /* Instagram */
+.custom-list a[href*="framer"] { color: var(--portfolio-li-color); } /* Portfolio color selection */
+.custom-list a[href*="linkedin"] { color: var(--occasion-top-color); } /* LinkedIn color selection*/
+.custom-list a[href*="github"] { color: var(--mood-brand-color); } /* GitHub color selection*/
+.custom-list a[href*="spotify"] { color: var(--spotify-li-color); } /* Spotify color selection*/
+.custom-list a[href*="pin"] { color: var(--pinterest-li-color); } /* Pinterest color selection*/
+.custom-list a[href*="instagram"] { color: var(--heading-color); } /* Instagram color selection*/
 
 .detail-wrapper {
     /* used for outfit details. "top, brand, linked" */
@@ -183,7 +172,79 @@ hr{
     /* used for bordering occasion, mood, weather */
     display: inline-block;
     padding: 4px 6px;
-    margin: 0;
+    margin: 0 0 6px 0;
     border: 2px dotted #CE9177;
     border-radius: 4px;
+}
+
+.grid-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 8px;
+}
+
+.index.card {
+    border: 2px dotted #CE9177;
+    padding: 10px 10px 4px 10px;
+    border-radius: 8px;
+    background-color: #FFEDD5;
+}
+
+.i_img {
+    width: 100%;  
+    height: auto;
+}
+
+.a_img_wrapper {
+    padding: 10px;
+    border: 2px dotted #CE9177;
+    border-radius: 8px;
+    background-color: #FFEDD5;
+}
+
+.a_img {
+    width: 100%;
+    height: auto;
+    border: 2px dotted #CE9177;
+    border-radius: 4px;
+    background-color: #FFEDD5;
+}
+
+@media (min-width: 1512px) {
+    body {
+        margin-inline: 241px;
+    }
+    h2 {
+        font-size: 20px;
+    }
+    p {
+        font-size: 14px;
+    }
+    .grid-container {
+        grid-template-columns: repeat(3, 1fr);
+    }
+}
+
+@media (width >= 834px) and (width <= 1512px) {
+    body {
+        margin-inline: 75px;
+    }
+    h2 {
+        font-size: 20px;
+    }
+    p {
+        font-size: 14px;
+    }
+    .grid-container {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (width >= 390px) and (width <= 834px) {
+    body {
+        margin-inline: 26px;
+    }
+    .grid-container {
+        grid-template-columns: 1fr;
+    }
 }
