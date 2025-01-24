@@ -185,19 +185,13 @@ a {
 .plink-list a[href*="pin"] { color: var(--pinterest-li-color); } /* Pinterest color selection*/
 .plink-list a[href*="instagram"] { color: var(--heading-color); } /* Instagram color selection*/
 
-.detail-wrapper {
-    /* used for outfit details. "top, brand, linked" */
-    padding: 10px;
-    border: 2px dotted #CE9177;
-    border-radius: 8px;
-    width: 100%;
-    background-color: #FFEDD5;
-    margin-bottom: 8px;
-}
-
 .green {
     /* used for categorizing occasion, mood, weather */
     color: var(--occasion-top-color);
+}
+
+h2.green {
+    color: var(--heading-color);
 }
 
 .blue {
@@ -208,6 +202,10 @@ a {
 .red {
     /* used for categorizing occasion, mood, weather */
     color: var(--weather-link-color)
+}
+
+p.red {
+    margin-bottom: 0;
 }
 
 .tag {
@@ -259,6 +257,38 @@ a {
     margin: 24px 0 0 0;
 }
 
+.photo-card-container {
+    display: flex;
+    align-items: stretch;
+    justify-content: space-between;
+    height: 100%;
+    margin: 0 0 24px 0;
+}
+
+.photo-outfit-wrapper {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start; 
+}
+
+.detail-wrapper {
+    /* used for outfit details. "top, brand, linked" */
+    padding: 10px;
+    border: 2px dotted #CE9177;
+    border-radius: 8px;
+    width: 100%;
+    background-color: #FFEDD5;
+    margin-bottom: 8px;
+}
+
+.outfit-details {
+    border: 2px dotted #CE9177;
+    padding: 16px 16px 4px 16px;
+    border-radius: 8px;
+    background-color: #FFEDD5;
+    margin: 24px 0 0 0;
+}
+
 /* used specifically for img in the photo card for margin top */
 .p_img {
     width: 100%;
@@ -290,37 +320,65 @@ a {
     body {
         margin-inline: 241px;
     }
+
     h2 {
         font-size: 20px;
     }
+
     p {
         font-size: 14px;
     }
-    .grid-container {
-        grid-template-columns: repeat(3, 1fr);
+
+    .photo-card-container {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 8px;
+        width: 100%;
     }
 }
 
-@media (width >= 834px) and (width <= 1512px) {
+@media (min-width: 834px) and (max-width: 1512px) {
     body {
-        margin-inline: 75px;
+        margin-inline: 100px;
     }
+
     h2 {
         font-size: 20px;
     }
+
     p {
         font-size: 14px;
     }
+
     .grid-container {
         grid-template-columns: repeat(2, 1fr);
     }
+
+    .photo-card-container {
+        display: block;
+    }
+
+    .photo.card, .outfit-details {
+        width: 100%;
+        margin-bottom: 20px;
+    }
 }
 
-@media (width >= 390px) and (width <= 834px) {
+@media (min-width: 390px) and (max-width: 834px) {
     body {
         margin-inline: 26px;
     }
+
     .grid-container {
         grid-template-columns: 1fr;
+    }
+
+    .photo-card-container {
+        display: block;
+    }
+
+    .photo.card, .outfit-details {
+        width: 100%;
+        margin-bottom: 20px;
     }
 }
