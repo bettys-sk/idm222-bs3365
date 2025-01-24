@@ -34,6 +34,7 @@ html{
     --h1-bottom-8: 8px;
     --h1-bottom-16-top-36: 36px;
     --h1-bottom-16-top-24: 24px;
+    --h1-bottom-8-top-10: 10px;
     --h2--bottom-16-top-24: 24px;
     --img-bottom-36: 36px;
     --box-bottom-8: 8px;
@@ -74,7 +75,7 @@ p{
 
 /*custom spacing throughout the CSS */
 .p-bottom-24-top-16 {
-    margin-bottom: var(--p-bottom-24);
+    margin-bottom: var(--h1-bottom-8);
     margin-top: var(--pp-top-16);
 }
 
@@ -90,6 +91,11 @@ p{
 .h1-bottom-16-top-24 {
     margin-bottom: var(--p-bottom-16);
     margin-top: var(--h1-bottom-16-top-24);
+}
+
+.h1-bottom-8-top-10 {
+    margin-bottom: var(--p-bottom-16);
+    margin-top: var(--h1-bottom-8-top-10);
 }
 
 .img-bottom-36 {
@@ -114,13 +120,26 @@ p{
     height: 46px;
 }
 
+.about-a {
+    color: #991B1B;
+    text-decoration: none;
+}
+
 hr{
     border-top: 2px dotted var(--pararaph-color);
 }
 
-.custom-list {
-    list-style: none; /* removes bullet points */
-    padding: 0; /* removes default padding */
+.container {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+    padding: 0;
+    margin: 0 0 30px 0;
+}
+
+.plink-list {
+    list-style: none; 
+    padding: 0;
     margin: 0;
     font-family: Roboto Mono, 'Courier New', Courier, monospace;
     font-weight: 400;
@@ -128,20 +147,25 @@ hr{
     line-height: 20px;
 }
 
-.custom-list li {
-    margin: 5px 0; /* adds spacing between list items */
+.plink-list li {
+    margin: 5px 0;
 }
 
-.custom-list a {
-    text-decoration: none; /* removes underline from links */
+.plink-list a {
+    text-decoration: none;
 }
 
-.custom-list a[href*="framer"] { color: var(--portfolio-li-color); } /* Portfolio color selection */
-.custom-list a[href*="linkedin"] { color: var(--occasion-top-color); } /* LinkedIn color selection*/
-.custom-list a[href*="github"] { color: var(--mood-brand-color); } /* GitHub color selection*/
-.custom-list a[href*="spotify"] { color: var(--spotify-li-color); } /* Spotify color selection*/
-.custom-list a[href*="pin"] { color: var(--pinterest-li-color); } /* Pinterest color selection*/
-.custom-list a[href*="instagram"] { color: var(--heading-color); } /* Instagram color selection*/
+.plink-img {
+    max-width: 150px;
+    height: auto;
+}
+
+.plink-list a[href*="framer"] { color: var(--portfolio-li-color); } /* Portfolio color selection */
+.plink-list a[href*="linkedin"] { color: var(--occasion-top-color); } /* LinkedIn color selection*/
+.plink-list a[href*="github"] { color: var(--mood-brand-color); } /* GitHub color selection*/
+.plink-list a[href*="spotify"] { color: var(--spotify-li-color); } /* Spotify color selection*/
+.plink-list a[href*="pin"] { color: var(--pinterest-li-color); } /* Pinterest color selection*/
+.plink-list a[href*="instagram"] { color: var(--heading-color); } /* Instagram color selection*/
 
 .detail-wrapper {
     /* used for outfit details. "top, brand, linked" */
@@ -177,22 +201,37 @@ hr{
     border-radius: 4px;
 }
 
+.page-nav {
+    display: flex;
+    justify-content: space-between;
+    margin: 0 0 30px 0;
+}
+
+.footer {
+    text-align: right;
+    margin: 0 0 30px 0;
+}
+
 .grid-container {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     gap: 8px;
+    margin: 0 0 30px 0;
 }
 
 .index.card {
     border: 2px dotted #CE9177;
-    padding: 10px 10px 4px 10px;
+    padding: 16px 16px 4px 16px;
     border-radius: 8px;
     background-color: #FFEDD5;
 }
 
-.i_img {
-    width: 100%;  
-    height: auto;
+.photo.card {
+    border: 2px dotted #CE9177;
+    padding: 16px 16px 4px 16px;
+    border-radius: 8px;
+    background-color: #FFEDD5;
+    margin: 24px 0 0 0;
 }
 
 .a_img_wrapper {
