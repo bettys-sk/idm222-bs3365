@@ -132,13 +132,13 @@ p{
 
 hr{
     border: none;
-    border-top: 3px dotted var(--pararaph-color);
+    border-top: 2px dotted var(--pararaph-color);
     border-color: #CE9177;
 }
 
 .hr-bottom {
     border: none;
-    border-top: 3px dotted var(--pararaph-color);
+    border-top: 2px dotted var(--pararaph-color);
     border-color: #CE9177;
     margin-bottom: 30px;
 }
