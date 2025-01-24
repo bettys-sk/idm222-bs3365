@@ -75,8 +75,13 @@ p{
 
 /*custom spacing throughout the CSS */
 .p-bottom-24-top-16 {
-    margin-bottom: var(--h1-bottom-8);
+    margin-bottom: var(--h1-bottom-16-top-24);
     margin-top: var(--pp-top-16);
+}
+
+.p-bottom-16-top-24 {
+    margin-bottom: var(--p-bottom-16);
+    margin-top: var(--h1-bottom-16-top-24);
 }
 
 .h1-bottom-16-top-36 {
@@ -126,7 +131,16 @@ p{
 }
 
 hr{
-    border-top: 2px dotted var(--pararaph-color);
+    border: none;
+    border-top: 3px dotted var(--pararaph-color);
+    border-color: #CE9177;
+}
+
+.hr-bottom {
+    border: none;
+    border-top: 3px dotted var(--pararaph-color);
+    border-color: #CE9177;
+    margin-bottom: 30px;
 }
 
 .container {
@@ -148,7 +162,7 @@ hr{
 }
 
 .plink-list li {
-    margin: 5px 0;
+    margin: 10px 0;
 }
 
 .plink-list a {
@@ -207,6 +221,10 @@ hr{
     margin: 0 0 30px 0;
 }
 
+.page-nav p {
+    font-size: 16px;
+}
+
 .footer {
     text-align: right;
     margin: 0 0 30px 0;
@@ -226,6 +244,7 @@ hr{
     background-color: #FFEDD5;
 }
 
+/* used specifically for photo cards in eg. 02-01 for margin top */
 .photo.card {
     border: 2px dotted #CE9177;
     padding: 16px 16px 4px 16px;
@@ -234,6 +253,17 @@ hr{
     margin: 24px 0 0 0;
 }
 
+/* used specifically for img in the photo card for margin top */
+.p_img {
+    width: 100%;
+    height: auto;
+    border: 2px dotted #CE9177;
+    border-radius: 4px;
+    background-color: #FFEDD5;
+    margin-top: 8px;
+}
+
+/* enables border styling for the box */
 .a_img_wrapper {
     padding: 10px;
     border: 2px dotted #CE9177;
@@ -241,6 +271,7 @@ hr{
     background-color: #FFEDD5;
 }
 
+/* enables border styling for the img */
 .a_img {
     width: 100%;
     height: auto;
