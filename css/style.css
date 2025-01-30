@@ -52,12 +52,12 @@ html{
 
 body {
     background-color: var(--box-color);
-    background-image: url('../images/grain-bg.webp'); 
+    background-image: url('../images/grain-bg.webp');
     background-repeat: no-repeat;
-    background-size: 100%;
+    background-size: cover; /* makes the image cover the viewport */
     background-blend-mode: color-burn;
-    min-height: 100vh;
-    background-attachment: fixed;
+    background-attachment: fixed; /* keeps my background fixed as i scroll */
+    min-height: 100vh; /* makes sure the background is always at least the height of the screen */
 }
 
 h1{
@@ -376,6 +376,8 @@ a, .about-a, .plink-list a {
 @media (min-width: 375px) and (max-width: 834px) {
     body {
         margin-inline: 26px;
+        min-height: 100vh;
+        background-attachment: scroll; /* Use scroll on mobile as a fallback */
     }
 
     .grid-container {
