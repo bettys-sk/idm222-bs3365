@@ -52,10 +52,12 @@ html{
 
 body {
     background-color: var(--box-color);
-    background-image: url('../images/bg-3.webp'); 
+    background-image: url('../images/grain-bg.webp'); 
     background-repeat: no-repeat;
-    background-size: auto;
+    background-size: 100%;
     background-blend-mode: color-burn;
+    min-height: 100vh;
+    background-attachment: fixed;
 }
 
 h1{
@@ -262,7 +264,6 @@ p.red {
     border: 2px dotted #CE9177;
     padding: 16px 16px 4px 16px;
     border-radius: 8px;
-    background-color: #FFEDD5;
     margin: 24px 0 0 0;
 }
 
@@ -286,7 +287,6 @@ p.red {
     border: 2px dotted #CE9177;
     border-radius: 8px;
     width: 100%;
-    background-color: #FFEDD5;
     margin-bottom: 8px;
 }
 
@@ -294,7 +294,6 @@ p.red {
     border: 2px dotted #CE9177;
     padding: 16px 16px 4px 16px;
     border-radius: 8px;
-    background-color: #FFEDD5;
     margin: 24px 0 0 0;
 }
 
