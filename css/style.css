@@ -52,10 +52,10 @@ html{
 
 body {
     background-color: var(--box-color);
-    background-image: url('../images/grain-bg.webp'); 
+    background-image: url('../images/bg-3.webp'); 
     background-repeat: repeat;
-    background-size: 100%;
-    background-blend-mode: multiply;
+    background-size: auto;
+    background-blend-mode: color-burn;
 }
 
 h1{
@@ -132,8 +132,6 @@ p{
     width: 43px;
     height: 46px;
 }
-
-cursor: url('../images/eye-cursor.png'),auto;
 
 a {
     text-decoration: none;
@@ -316,6 +314,7 @@ p.red {
     border: 2px dotted #CE9177;
     border-radius: 8px;
     background-color: #FFEDD5;
+    text-decoration: none;
 }
 
 /* enables border styling for the img */
@@ -325,6 +324,7 @@ p.red {
     border: 2px dotted #CE9177;
     border-radius: 4px;
     background-color: #FFEDD5;
+    text-decoration: none;
 }
 
 a, .about-a, .plink-list a {
