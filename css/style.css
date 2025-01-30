@@ -376,8 +376,9 @@ a, .about-a, .plink-list a {
 @media (min-width: 375px) and (max-width: 834px) {
     body {
         margin-inline: 26px;
-        min-height: 100vh;
-        background-attachment: scroll; /* Use scroll on mobile as a fallback */
+        background-size: cover;
+        background-size: 100% auto;
+        background-attachment: scroll;
     }
 
     .grid-container {
