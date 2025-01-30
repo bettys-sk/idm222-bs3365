@@ -51,13 +51,9 @@ html{
    }
 
 body {
-    background-color: var(--box-color);
-    background-image: url('../images/grain-bg.webp');
-    background-repeat: no-repeat;
-    background-size: cover; /* makes the image cover the viewport */
-    background-blend-mode: color-burn;
-    background-attachment: fixed; /* keeps my background fixed as i scroll */
-    min-height: 100vh; /* makes sure the background is always at least the height of the screen */
+    background-color: #FFE9CD;
+    background-image: url('../images/bg-1.png');
+    background-repeat: repeat;
 }
 
 h1{
@@ -108,9 +104,9 @@ p{
     margin-top: var(--h1-bottom-16-top-24);
 }
 
-.h1-bottom-8-top-10 {
+.h1-bottom-8 {
     margin-bottom: var(--p-bottom-16);
-    margin-top: var(--h1-bottom-8-top-10);
+    margin-top: 0px;
 }
 
 .img-bottom-36 {
@@ -373,12 +369,9 @@ a, .about-a, .plink-list a {
     }
 }
 
-@media (min-width: 375px) and (max-width: 834px) {
+@media (min-width: 330px) and (max-width: 834px) {
     body {
         margin-inline: 26px;
-        background-size: cover;
-        background-size: 100% auto;
-        background-attachment: scroll;
     }
 
     .grid-container {
