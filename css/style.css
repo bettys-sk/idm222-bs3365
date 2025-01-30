@@ -55,7 +55,7 @@ body {
     background-image: url('../images/grain-bg.webp'); 
     background-repeat: repeat;
     background-size: 100%;
-    background-blend-mode: color-burn;
+    background-blend-mode: multiply;
 }
 
 h1{
