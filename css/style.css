@@ -40,7 +40,7 @@ html{
 
     cursor: url('../images/eye-cursor.png'),auto;
 
-    --background-color: #F5F4F1;
+    --background-color: #FAF8EF;
     --box-color: #FFEDD5;
     --stroke-color: #CE9177;
     --heading-color: #9A3413;
@@ -58,7 +58,7 @@ html{
    }
 
 body {
-    background-color: #FFE9CD;
+    background-color: #FAF8EF;
     background-image: url('../images/bg-1.png');
     background-repeat: repeat;
 }
@@ -263,10 +263,13 @@ p.red {
 }
 
 .index.card {
+    z-index: 10;
+    background-color: #FAF8EF;
+    opacity: 1;
     border: 2px dotted #CE9177;
     padding: 16px 16px 8px 16px;
     border-radius: 8px;
-    cursor: url('../images/cursor.png'),auto;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
 /* used specifically for photo cards in eg. 02-01 for margin top */
@@ -415,6 +418,19 @@ h2.h1-bottom-16-top-24 {
         line-height: 20px;
         color: var(--pararaph-color);
     }    
+
+
+    .index.card:hover {
+        transform: rotate(-5deg);
+        box-shadow: rgba(0, 0, 0, 0.3) 0px 8px 24px;
+        opacity: 1;
+        z-index: 10;
+    }
+
+    .index.card:not(:hover) {
+        opacity: 0.5;
+        z-index: 1;
+    }   
 }
 
 @media (min-width: 834px) and (max-width: 1512px) {
