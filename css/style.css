@@ -196,6 +196,19 @@ hr{
     height: auto;
 }
 
+.hover-image {
+    width: 220px;
+    height: 350px;
+    background-image: url(../images/about_3_small.png);
+    background-size: cover;
+    background-position: center;
+    transition: background-image 0.3s ease-in-out;
+}
+
+.hover-image:hover {
+    background-image: url(../images/about_4_small.png);
+}
+
 .plink-list a[href*="framer"] { color: var(--portfolio-li-color); } /* Portfolio color selection */
 .plink-list a[href*="linkedin"] { color: var(--occasion-top-color); } /* LinkedIn color selection*/
 .plink-list a[href*="github"] { color: var(--mood-brand-color); } /* GitHub color selection*/
