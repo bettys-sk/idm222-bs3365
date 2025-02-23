@@ -148,20 +148,20 @@ a {
 }
 
 .about-a {
-    color: #991B1B;
+    color: #9A3413;
     text-decoration: none;
 }
 
 hr{
     border: none;
     border-top: 2px dotted var(--pararaph-color);
-    border-color: #CE9177;
+    border-color: #9A3413;
 }
 
 .hr-bottom {
     border: none;
     border-top: 2px dotted var(--pararaph-color);
-    border-color: #CE9177;
+    border-color: #9A3413;
     margin-bottom: 30px;
 }
 
@@ -244,7 +244,7 @@ p.red {
     display: inline-block;
     padding: 4px 6px;
     margin: 0 0 6px 0;
-    border: 2px dotted #CE9177;
+    border: 2px dotted #9A3413;
     border-radius: 4px;
 }
 
@@ -281,7 +281,7 @@ p.red {
     z-index: 10;
     background-color: #FAF8EF;
     opacity: 1;
-    border: 2px dotted #CE9177;
+    border: 2px dotted #9A3413;
     padding: 16px 16px 8px 16px;
     border-radius: 8px;
     transition: transform 0.3s ease, box-shadow 0.3s ease;
@@ -289,7 +289,7 @@ p.red {
 
 /* used specifically for photo cards in eg. 02-01 for margin top */
 .photo.card {
-    border: 2px dotted #CE9177;
+    border: 2px dotted #9A3413;
     padding: 16px 16px 8px 16px;
     border-radius: 8px;
     margin: 24px 0 0 0;
@@ -313,14 +313,14 @@ p.red {
 .detail-wrapper {
     /* used for outfit details. "top, brand, linked" */
     padding: 10px;
-    border: 2px dotted #CE9177;
+    border: 2px dotted #9A3413;
     border-radius: 8px;
     width: 100%;
     margin-bottom: 8px;
 }
 
 .outfit-details {
-    border: 2px dotted #CE9177;
+    border: 2px dotted #9A3413;
     padding: 16px 16px 8px 16px;
     border-radius: 8px;
     margin: 24px 0 0 0;
@@ -330,16 +330,15 @@ p.red {
 .p_img {
     width: 100%;
     height: auto;
-    border: 2px dotted #CE9177;
+    border: 2px dotted #9A3413;
     border-radius: 4px;
-    background-color: #FFEDD5;
     margin-top: 8px;
 }
 
 /* enables border styling for the box */
 .a_img_wrapper {
     padding: 10px 10px 6.5px 10px;
-    border: 2px dotted #CE9177;
+    border: 2px dotted #9A3413;
     border-radius: 8px;
     text-decoration: none;
 }
@@ -348,7 +347,7 @@ p.red {
 .a_img {
     width: 100%;
     height: auto;
-    border: 2px dotted #CE9177;
+    border: 2px dotted #9A3413;
     border-radius: 4px;
     text-decoration: none;
 }
