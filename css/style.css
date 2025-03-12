@@ -166,6 +166,7 @@ hr{
 }
 
 .container {
+    /* this container is used to combine external links/image in the about page  */
     display: flex;
     justify-content: space-between;
     align-items: flex-end;
@@ -197,6 +198,7 @@ hr{
 }
 
 .hover-image {
+    /* this animation allows users to switch between two photos while hovering */
     width: 150px;
     height: 240.48px;
     background-image: url(../images/about_3_small.png);
@@ -268,6 +270,10 @@ p.red {
 }
 
 .grid-container {
+    /* grid container stores all index cards. 
+    In large screen, they allow to fit 3 index card max
+    In medium screens, they allow max of 2
+    In small screen, they allow max 1 */
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     gap: 8px;
@@ -287,8 +293,8 @@ p.red {
     transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
-/* used specifically for photo cards in eg. 02-01 for margin top */
 .photo.card {
+    /* used specifically for photo cards in eg. 02-01 for margin top */
     border: 2px dotted #9A3413;
     padding: 16px 16px 8px 16px;
     border-radius: 8px;
@@ -296,6 +302,9 @@ p.red {
 }
 
 .photo-card-container {
+    /* photocard container stores photo card and outfit details
+    allows the placement of horizontal in large
+    allows the placement of vertical in medium/small */
     display: flex;
     align-items: stretch;
     justify-content: space-between;
@@ -326,8 +335,8 @@ p.red {
     margin: 24px 0 0 0;
 }
 
-/* used specifically for img in the photo card for margin top */
 .p_img {
+    /* used specifically for img in the photo card for margin top */
     width: 100%;
     height: auto;
     border: 2px dotted #9A3413;
@@ -335,16 +344,16 @@ p.red {
     margin-top: 8px;
 }
 
-/* enables border styling for the box */
 .a_img_wrapper {
+    /* enables border styling for the box */
     padding: 10px 10px 6.5px 10px;
     border: 2px dotted #9A3413;
     border-radius: 8px;
     text-decoration: none;
 }
 
-/* enables border styling for the img */
 .a_img {
+    /* enables border styling for the img */
     width: 100%;
     height: auto;
     border: 2px dotted #9A3413;
@@ -353,6 +362,7 @@ p.red {
 }
 
 a, .about-a, .plink-list a {
+    /* custom cursor style */
     cursor: url('../images/link-cursor.png') 16 16, pointer;
 }
 
